@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="progress"></div>
+    <div id="heroimgouterdiv">
+        <header>
+            <div id="logodiv"></div>
+            <div id="categoryslist">
+                <div class="list" id="homediv">Home</div>
+                <div class="list">Shop</div>
+                <div class="list">Features</div>
+                <div class="list">Reviews</div>
+            </div>
+            <div id="icondiv">
+                <input type="text" placeholder="Search for product" id="fieldtext">
+
+                <div class="icons"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  fill="currentColor" viewBox="0 0 24 24" ><path d="M10.5 19c1.98 0 3.81-.69 5.25-1.83L20 21.42l1.41-1.41-4.25-4.25a8.47 8.47 0 0 0 1.83-5.25c0-4.69-3.81-8.5-8.5-8.5S2 5.81 2 10.5 5.81 19 10.5 19m0-15c3.58 0 6.5 2.92 6.5 6.5S14.08 17 10.5 17 4 14.08 4 10.5 6.92 4 10.5 4"></path></svg></div>
+
+                <div class="icons"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+                fill="currentColor" viewBox="0 0 24 24" ><path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5m0-8c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1m6-7h4c2.76 0 5 2.24 5 5H5c0-2.76 2.24-5 5-5"></path></svg></div>
+
+                <div class="icons"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"   fill="currentColor" viewBox="0 0 24 24" >
+                <path d="M2.21 9.39c-.19.25-.25.57-.17.87l2.8 10.26c.24.87 1.03 1.47 1.93 1.47h10.47c.9 0 1.69-.61 1.93-1.47l2.8-10.26c.08-.3.02-.62-.17-.87a.99.99 0 0 0-.79-.39h-1.42l-3.71-6.5-1.74.99 3.15 5.5H6.72l3.15-5.5-1.74-.99L4.42 9H3a1 1 0 0 0-.79.39M17.24 20H6.76l-2.45-9h15.38z"></path><path d="M9 13h2v5H9zm4 0h2v5h-2z"></path></svg><div class="addtocartcount"><p id="itemcount"></p></div></div>
+        </div>
+            <div id="toggleBtndiv">
+                <div id="toggleBtn">
+                    <div class="suniconnill" id="suniconBtn"><svg  xmlns="http://www.w3.org/2000/svg" width="18" height="18"  
+                    fill="currentColor" viewBox="0 0 24 24"  
+                    transform="scale(-1,1) rotate(270)">
+                   <path d="M6.99 12c0 2.76 2.25 5.01 5.01 5.01s5.01-2.25 5.01-5.01S14.76 6.99 12 6.99 6.99 9.24 6.99 12M12 8.99c1.66 0 3.01 1.35 3.01 3.01s-1.35 3.01-3.01 3.01S8.99 13.66 8.99 12 10.34 8.99 12 8.99M13 19h-2v2h2zM11 5h2V3h-2zm-8 6h2v2H3zm16 0h2v2h-2zM4.93 17.66l.71.7.7.71.71-.71.71-.7-.71-.71-.71-.71-.7.71zM17.66 4.93l-.71.71-.71.7.71.71.71.71.7-.71.71-.71-.71-.7zM4.93 6.34l.71.71.7.71.71-.71.71-.71-.71-.7-.71-.71-.7.71zm12.73 12.73.7-.71.71-.7-.71-.71-.7-.71-.71.71-.71.71.71.7z"></path></svg></div>
+
+                    <div class="mooniconnill" id="mooniconBtn"><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16"  
+                    fill="currentColor" viewBox="0 0 24 24"  
+                    transform="scale(-1,1) rotate(270)">
+                    <path d="M12.2 22c4.53 0 8.45-2.91 9.76-7.24a1.002 1.002 0 0 0-1.25-1.25c-.78.23-1.58.35-2.38.35-4.52 0-8.2-3.68-8.2-8.2 0-.8.12-1.6.35-2.38.11-.35.01-.74-.25-1s-.64-.36-1-.25A10.17 10.17 0 0 0 2 11.8C2 17.42 6.57 22 12.2 22M8.18 4.65c-.03.34-.05.68-.05 1.02 0 5.62 4.57 10.2 10.2 10.2.34 0 .68-.02 1.02-.05C17.93 18.38 15.23 20 12.2 20 7.68 20 4 16.32 4 11.8a8.15 8.15 0 0 1 4.18-7.15"></path></svg></div>
+                </div>
+            </div>
+        </header>
+        <div id="heroimageinfo">
+            <button id="newaarivalBtn"> NEW AARIVAL</button>
+            <h1>Designed<br> to Flow.</h1>
+            <p>Minimal look. Maximum sound. For every mood, every moment.</p>
+            <div id="buttonsDiv">
+                <button id="shownowBtn" class="heroBtn">
+                    <span class="text">Shop Now</span>
+                    <span class="material-symbols-rounded arrow">arrow_forward</span>
+                </button>
+                <button id="explorecollections" class="heroBtn">
+                    <span class="text">Explore Collections</span>
+                    <span class="material-symbols-rounded arrow">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+        <div id="featuresdiv">
+            <div class="iconfeatures">
+                <div class="featuresicondiv"><span class="material-symbols-rounded">graphic_eq</span></div>
+                <div class="featuresmatter">
+                    <p class="featureheading">High Fidelity Sound</p>
+                    <p class="submatter">Deep,rich,immersive audio</p>
+                </div>
+            </div>
+            <div class="iconfeatures">
+                <div class="featuresicondiv"><span class="material-symbols-rounded">bluetooth_searching</span></div>
+                <div class="featuresmatter">
+                    <p class="featureheading">Bluetooth 5.3</p>
+                    <p class="submatter">Fast,stable,seamless</p>
+                </div>
+            </div>
+            <div class="iconfeatures">
+                <div class="featuresicondiv"><span class="material-symbols-rounded">battery_android_5</span></div>
+                <div class="featuresmatter">
+                    <p class="featureheading">50H Playtime</p>
+                    <p class="submatter">All-day power,non-stop</p>
+                </div>
+            </div>
+            <div class="iconfeatures">
+                <div class="featuresicondiv"><span class="material-symbols-rounded">fitness_center</span></div>
+                <div class="featuresmatter">
+                    <p class="featureheading">Lightweight Comfort</p>
+                    <p class="submatter">Designed for all-days wear</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="secondheroimgouterdiv">
+        <div id="textcolorinfodiv"><p id="headsetcolor">6w Headphone<br>Black and your color</p>
+            <span id="price">$59.99</span><span id="originalprice">$55.99</span>
+        </div>
+        <div id="musicbigtextdiv">
+            <p id="musictext">Music</p>
+        </div>
+        <div id="secondheadsetdiv"></div>
+        <div id="headsettypesdiv">
+            <div class="typesinnerdivs" id="listitems">
+                <p id="addtocart"><span class="material-symbols-rounded">add_circle</span>
+                <span>Add to cart</span></p></div>
+            <div class="typesinnerdivs" id="centertypediv">
+                <button class="leftandrightBtn" id="leftsideBtn">&lt;</button>
+                <div class="smallimagsdiv" id="leftsideimage"></div>
+                <div class="smallimagsdiv" id="centertypeimage"></div>
+                <div class="smallimagsdiv"  id="rightsideimg"></div>
+                <button class="leftandrightBtn" id="rightsideBtn">&gt;</button>
+            </div>
+            <div class="typesinnerdivs"><button id="buynowBtnredict">Buy now</button></div>
+        </div>
+        <div id="reviewouterdiv">
+            <div id="theirstorydiv"><p id="letstory">LET THEIR STORY<br>INSPIRE YOU</p>
+                <p id="redefine">Redefine Your Audio Journey</p></div>
+            <div id="reviewcontentdiv">
+                <div id="leftsidereview" class="peoplediv">
+                    <div class="contenttext"><p class="reviewtaxt1">I was <span id="higlet">blown away by the sound quality</span>of these<br>headphone!
+                         The noise canclellation is incredible, and<br>the bass is deep and rich</p>
+                        <p id="rating">⭐⭐⭐⭐⭐ 5.0</p></div>
+                    <div class="persondiv">
+                        <div id="profilediv"></div>
+                        <div class="namediv">
+                            <p class="Username">Arrow Naresh</p><p class="usertime">User Since 2020</p></div>
+                        <div class="personinnerdivs" id="colondiv">,,</div>
+                    </div>
+                </div>
+                <div id="centersidereview" class="peoplediv">
+                    <div class="contenttext"><p class="reviewtaxt1">They're so comfortable to wear, I can listen for hours without any<br>discomfort. The battery life is impressive too. Highly recommend!</p></div>
+                    <div class="persondiv">
+                        <div id="profilediv2"></div>
+                        <div class="namediv">
+                        <p class="Username">Shilpa shetty</p><p class="usertime">User Since 2022</p>
+                        </div></div>
+                </div>
+                <div id="rightsidereview" class="peoplediv">
+                    <div class="contenttext"><p class="reviewtaxt1">The soundstage is wide, the detail is stunning, and the comfort is<br>unmatched. These headphones are<br>my go-to choice.</p></div>
+                    <div class="persondiv">
+                        <div id="profilediv3"></div>
+                        <div class="namediv">
+                        <p class="Username">Nattu mayuri</p><p class="usertime">User Since 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="stayupdateddiv">
+            <div id="emaildiv">
+                <p id="staypara">STAY UPDATED WITH US</p>
+                <p id="donotmisspara">Don't miss out on the opportunity to stay<br>ahead of curve</p>
+                <div id="emailandbtndiv"><input type="email" placeholder="Enter your e-mail" id="bottomemail">
+                       <button id="bottomBtn">Subscribe</button></div>
+            </div>
+            <div id="partsdiv"></div>
+        </div>
+        <footer>
+            <div  class="footerboxes" id="footerinfodiv">
+                <div class="footerinnerinfo">
+                    <p class="productfeaturesupport">Product</p>
+                    <ul class="listitems">
+                        <a href=""><li>Earbuds</li></a>
+                        <a href=""><li>In-ears</li></a>
+                        <a href=""><li>Headphone</li></a>
+                        <a href=""><li>Speaker</li></a>
+                    </ul>
+                </div>
+                <div class="footerinnerinfo">
+                    <p class="productfeaturesupport">Featured</p>
+                    <ul class="listitems">
+                        <a href=""><li>New Arrival</li></a>
+                        <a href=""><li>Top Picks</li></a>
+                        <a href=""><li>Best Seller</li></a>
+                        <a href=""><li>Collaboration</li></a>
+                    </ul>
+                </div>
+                <div class="footerinnerinfo">
+                    <p class="productfeaturesupport">Support</p>
+                    <ul class="listitems">
+                        <a href=""><li>Help Desk</li></a>
+                        <a href=""><li>Service Center</li></a>
+                        <a href=""><li>FAQ</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div  class="footerboxes" id="backtotop">
+                <div id="returntotop"><span class="material-symbols-rounded">arrow_warm_up</span></div>
+                <p id="backtotoptext">Back to Top</p>
+            </div>
+            <div  class="footerboxes" id="socialmediadiv">
+                <div id="mellotextdiv">
+                    <p id="mellotext">Mello</p>
+                    <p id="perfect">Your Perfect Listing Partner</p>
+                </div>
+                <div id="socialiconsdivs">
+                    <div class="iconssocial"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="iconssocial"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="iconssocial"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="iconssocial"><i class="fa-brands fa-x-twitter"></i></div>
+                    <div class="iconssocial"><i class="fa-brands fa-facebook-f"></i></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
