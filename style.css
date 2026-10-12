@@ -226,6 +226,7 @@ header{
     border-radius: 50px;
     font-size: 14px;
     font-weight: 500;
+    color: #000;
     cursor: pointer;
 }
 #shownowBtn span{
@@ -259,12 +260,14 @@ header{
     transform-origin: right;
     transition: transform 0.3s ease;
 }
-#shownowBtn:hover::before,
-#shownowBtn:hover::after{
-    transform: scaleX(1);
-}
-#shownowBtn:hover span{
-    color: #fff;
+@media (hover: hover) and (pointer: fine){
+    #shownowBtn:hover::before,
+    #shownowBtn:hover::after{
+        transform: scaleX(1);
+    }
+    #shownowBtn:hover span{
+        color: #fff;
+    }
 }
 .heroBtn{
     border: none;
